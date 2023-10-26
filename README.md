@@ -23,7 +23,9 @@ django-admin startapp www
 
 ```
 
-gnekj(nglke
+# Test de fontionnement de l'app
 
-(gnkengklen
-knhbkndblk))
+```sh
+python manage.py runserver
+
+```
