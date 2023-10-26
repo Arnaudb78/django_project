@@ -10,7 +10,20 @@ source venv/bin/activate
 ```
 
 # démarrage du projet
+
 ```sh
 django-admin startproject config .
 
 ```
+
+# ajouter l'app
+
+```sh
+django-admin startapp www
+
+```
+
+gnekj(nglke
+
+(gnkengklen
+knhbkndblk))
