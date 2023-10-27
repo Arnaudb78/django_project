@@ -96,3 +96,13 @@ pip install requests
 - python manage.py runscript import.py
 
 ```
+
+# Rendu routage url / template
+
+- templates/
+  - base.html
+- www/templates/
+  - list.html
+  - single.html
+  - cat.html
+  - tags.html

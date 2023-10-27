@@ -1,0 +1,14 @@
+{% extends 'base.html' %} 
+<!-- www/templates/article_list.html -->
+{% block content %}
+<div class="row"> 
+    <h1 class="col-12">Liste d'article :</h1>
+    {% for article in articles %}
+    <div class="col-4 mb-4">
+        <img src="{{article.thumb.url}}" alt="{{article.title}}" class="img-fluid"/>
+        <!-- <p>{{article.thum.size}} {{article.thumb.width}} {{article.thumb.height}} </p> -->
+        <p>{{ article.title }}</p>
+    </div>
+    {% endfor%}
+</div>
+{% endblock %}
