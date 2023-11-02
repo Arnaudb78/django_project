@@ -22,8 +22,8 @@ from django.conf.urls.static import static
 from django.conf import settings
 
 urlpatterns = [
-    path("", include("www.urls")),
-    path("admin/", admin.site.urls),
+    path("", include("www.urls")),  # routes locales
+    path("admin/", admin.site.urls),  # routes globales
 ]
 
 if settings.DEBUG:

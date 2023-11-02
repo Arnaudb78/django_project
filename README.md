@@ -106,3 +106,7 @@ pip install requests
   - single.html
   - cat.html
   - tags.html
+
+## Liens "category" et "tags"
+
+- models -> views/templates ->
