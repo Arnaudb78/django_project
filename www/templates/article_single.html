@@ -9,10 +9,10 @@
     <h1 class="col-12">{{ article.title }}</h1>
     <div class="col-6">
         <div>{{article.content|linebreaks}}</div>
-        <p>Catégorie : <a href="#">{{ article.category.title }}</a></p>
+        <p>Catégorie : <a href="{% url 'cat_list' article.category.pk %}">{{ article.category.title }}</a></p>
         <p>
             Tags : {% for tag in article.tags.all %}
-            <a href="#">{{ tag.word }}</a> {% endfor %}
+            <a href="{% url 'tag_list' tag.pk %}">{{ tag.word }}</a> {% endfor %}
         </p>
     </div>
     <div class="col-6">

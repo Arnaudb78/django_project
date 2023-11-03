@@ -109,4 +109,4 @@ pip install requests
 
 ## Liens "category" et "tags"
 
-- models -> views/templates ->
+- models -> views/templates -> urls

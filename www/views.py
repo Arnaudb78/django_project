@@ -19,6 +19,16 @@ def CategoryList(request, category_id):
     return render(request, "filters.html", context)
 
 
+def TagsList(request, tag_id):
+    currentTag = Tags.objects.get(pk=tag_id)
+    articles = Articles.objects.filter(tags=currentTag)
+    context = {
+        "title": currentTag.word,
+        "articles": articles,
+    }
+    return render(request, "filters.html", context)
+
+
 class ArticleList(ListView):
     model = Articles
     template_name = "article_list.html"
